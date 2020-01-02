@@ -10,7 +10,7 @@ process.on('uncaughtException', err => {
 const app = require('./app')
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.DATABASE, {
+mongoose.connect('mongodb+srv://mohamed:m+0101327302@cluster0-q8yab.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
